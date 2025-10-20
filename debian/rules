@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+PACKAGE := guideos-backgrounds-trixie
+
+%:
+	dh $@
+
+override_dh_install:
+	# Erstellen der notwendigen Verzeichnisse
+	mkdir -p debian/$(PACKAGE)/usr/share/backgrounds
+	mkdir -p debian/$(PACKAGE)/usr/share/gnome-background-properties
+	mkdir -p debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)
+
+	# Kopieren der Dateien
+	cp -r guideos-trixie debian/$(PACKAGE)/usr/share/backgrounds/guideos-trixie
+	cp guideos-trixie.xml debian/$(PACKAGE)/usr/share/gnome-background-properties/guideos-trixie.xml
+	cp LICENSE debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)/LICENSE
+
+
+	dh_install
