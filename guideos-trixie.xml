@@ -65,6 +65,15 @@
      <shade_type>solid</shade_type>
   </wallpaper>
   <wallpaper>
+     <name>Fanless But Cool 0.9</name>
+     <filename>/usr/share/backgrounds/guideos-trixie/fanless-but-cool_legacy@evilware666.png</filename>
+     <options>zoom</options>
+     <pcolor>#000000</pcolor>
+     <scolor>#000000</scolor>
+     <artist>evilware666</artist>
+     <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
      <name>Feels Like Home</name>
      <filename>/usr/share/backgrounds/guideos-trixie/feels-like-home@Actionschnitzel.png</filename>
      <options>zoom</options>
